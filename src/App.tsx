@@ -1,10 +1,15 @@
+import Hero from "./components/Hero"
+import Highlights from "./components/Highlights"
+import Navbar from "./components/Navbar"
 
 const App = () => {
 
   return (
-    <h1>
-      Hello World
-    </h1>
+    <main>
+      <Navbar />
+      <Hero />
+      <Highlights />
+    </main>
   )
 }
 
