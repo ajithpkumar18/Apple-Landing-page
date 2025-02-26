@@ -78,7 +78,7 @@ export default function Features() {
         <section className="h-full sm:py-32 py-20 sm:px-10 px-5 bg-zinc relative overflow-hidden">
             <div className="screen-max-width">
                 <div className="mb-12 w-full">
-                    <h1 id="features_title" className="section-heading opacity-0">Explore the full story.</h1>
+                    <h1 id="features_title" className="text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium translate-y-20 opacity-0">Explore the full story.</h1>
                 </div>
 
                 <div className="flex flex-col justify-center items-center overflow-hidden">
