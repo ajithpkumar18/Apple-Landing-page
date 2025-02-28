@@ -2,18 +2,20 @@
 import { chipImg, frameImg, frameVideo } from "../utils"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
-import { ScrollTrigger } from "gsap/all"
+// import { ScrollTrigger } from "gsap/all"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useRef } from "react"
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 
 const HowItWorks = () => {
-    const videoRef: any = useRef()
+    const videoRef: any = useRef<HTMLVideoElement | null>(null)
     useGSAP(() => {
         gsap.from('#chip', {
             scrollTrigger: {
                 trigger: '#chip',
-                start: "-10% bottom"
+                start: "-10% bottom",
+                toggleActions: 'restart play',
             },
             opacity: 0,
             scale: 2,
@@ -21,16 +23,15 @@ const HowItWorks = () => {
             ease: 'power2.inOut'
         })
 
-        gsap.to('.g_fadeIn', {
+        gsap.to('.fadeIn', {
             opacity: 1,
             y: 0,
-            duration: 1,
+            duration: 2,
             ease: 'power2.inOut',
             scrollTrigger: {
-                trigger: "#features_title",
+                trigger: ".fadeIn",
                 toggleActions: 'restart reverse restart reverse',
-                start: 'top 80%',
-                scrub: 5.5
+                start: '-10% bottom'
             }
         })
 
@@ -73,7 +74,7 @@ const HowItWorks = () => {
                 </div>
                 <div className=" flex md:flex-row flex-col justify-between items-start gap-24">
                     <div className="flex flex-1 justify-center flex-col">
-                        <p className="g_fadeIn text-gray text-xl font-normal md:font-semibold">
+                        <p className="fadeIn text-gray text-xl font-normal md:font-semibold opacity-0">
                             A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
                             <span className="text-white">
                                 best graphic performance by far
@@ -81,10 +82,10 @@ const HowItWorks = () => {
                         </p>
 
 
-                        <p className="g_fadeIn text-gray text-xl font-normal md:font-semibold">
+                        <p className="fadeIn text-gray text-xl font-normal md:font-semibold opacity-0">
                             Mobile {' '}
                             <span className="text-white">
-                                games will ook and feel so immersive
+                                games will look and feel so immersive
                             </span>,
                             with incredibly detailed environments and characters
                         </p>
@@ -92,7 +93,7 @@ const HowItWorks = () => {
 
 
 
-                    <div className="flex flex-1 justify-center flex-col g_fadeIn">
+                    <div className="flex flex-1 justify-center flex-col fadeIn opacity-0">
                         <p className="text-gray text-xl font-normal md:font-semibold">New</p>
                         <p className="text-white text-3xl md:text-5xl font-normal md:font-semibold my-2">Pro-class GPU</p>
                         <p className="text-gray text-xl font-normal md:font-semibold">with 6 cores</p>
