@@ -3,12 +3,13 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
 import { useRef } from "react"
 // ts-ignore
-import { exploreVideo, explore1Img, explore2Img } from "../utils"
+import { exploreVideo, explore1Img, explore2Img } from "../utils/index"
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Features() {
-    const videoRef = useRef<HTMLVideoElement>();
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
     useGSAP(() => {
 
         gsap.to('exploreVideo', {
@@ -18,8 +19,9 @@ export default function Features() {
                 start: '-10% bottom'
             },
             onComplete: () => {
-                // ts-ignore
-                videoRef.current?.play();
+                if (videoRef.current) {
+                    videoRef.current.play().catch(error => console.error("Video play error:", error));
+                }
             }
         })
 

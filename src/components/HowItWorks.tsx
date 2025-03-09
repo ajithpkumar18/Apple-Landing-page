@@ -1,5 +1,4 @@
-// @ts-ignore
-import { chipImg, frameImg, frameVideo } from "../utils"
+import { chipImg, frameImg, frameVideo } from "../utils/index"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 // import { ScrollTrigger } from "gsap/all"

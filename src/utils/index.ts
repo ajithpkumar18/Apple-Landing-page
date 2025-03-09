@@ -1,6 +1,6 @@
 import hero from "/assets/images/hero.jpeg";
 
-export const heroImg = hero;
+export const heroImg: string = hero;
 
 import hmv from "/assets/videos/hero.mp4";
 import smallmv from "/assets/videos/smallHero.mp4";
@@ -29,29 +29,29 @@ import explore2 from "/assets/images/explore2.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
 
-export const heroVideo = hmv;
-export const smallHeroVideo = smallmv;
-export const highlightFirstVideo = highlightFirstmv;
-export const highlightSecondVideo = highlightSectmv;
-export const highlightThirdVideo = highlightThirdmv;
-export const highlightFourthVideo = highlightFourthmv;
-export const exploreVideo = exploremv;
-export const frameVideo = framemv;
+export const heroVideo: string = hmv;
+export const smallHeroVideo: string = smallmv;
+export const highlightFirstVideo: string = highlightFirstmv;
+export const highlightSecondVideo: string = highlightSectmv;
+export const highlightThirdVideo: string = highlightThirdmv;
+export const highlightFourthVideo: string = highlightFourthmv;
+export const exploreVideo: string = exploremv;
+export const frameVideo: string = framemv;
 
-export const appleImg = apple;
-export const searchImg = search;
-export const bagImg = bag;
-export const watchImg = watch;
-export const rightImg = right;
-export const replayImg = replay;
-export const playImg = play;
-export const pauseImg = pause;
+export const appleImg: string = apple;
+export const searchImg: string = search;
+export const bagImg: string = bag;
+export const watchImg: string = watch;
+export const rightImg: string = right;
+export const replayImg: string = replay;
+export const playImg: string = play;
+export const pauseImg: string = pause;
 
-export const yellowImg = yellow;
-export const blueImg = blue;
-export const whiteImg = white;
-export const blackImg = black;
-export const explore1Img = explore1;
-export const explore2Img = explore2;
-export const chipImg = chip;
-export const frameImg = frame;
+export const yellowImg: string = yellow;
+export const blueImg: string = blue;
+export const whiteImg: string = white;
+export const blackImg: string = black;
+export const explore1Img: string = explore1;
+export const explore2Img: string = explore2;
+export const chipImg: string = chip;
+export const frameImg: string = frame;

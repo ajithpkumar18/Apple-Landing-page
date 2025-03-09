@@ -1,7 +1,7 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 // @ts-ignore
-import { heroVideo, smallHeroVideo } from "../utils"
+import { heroVideo, smallHeroVideo } from "../utils/index"
 import { useEffect, useState } from "react"
 
 const Hero = () => {

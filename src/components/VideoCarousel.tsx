@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-// @ts-ignore
-import { pauseImg, playImg, replayImg } from "../utils"
-// @ts-ignore
+import { pauseImg, playImg, replayImg } from "../utils/index"
 import { hightlightsSlides } from "../constants/index"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

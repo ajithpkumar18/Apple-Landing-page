@@ -2,13 +2,11 @@ import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import ModelView from "./ModelView"
 import { useEffect, useRef, useState } from "react"
-// @ts-ignore
-import { yellowImg } from "../utils"
+import { yellowImg } from "../utils/index"
 import * as THREE from "three"
 import { Canvas } from "@react-three/fiber"
 import { View } from "@react-three/drei"
-// @ts-ignore
-import { models, sizes } from "../constants"
+import { models, sizes } from "../constants/index"
 import { animateWithGsapTimeline } from "../utils/animations"
 
 export default function Model() {

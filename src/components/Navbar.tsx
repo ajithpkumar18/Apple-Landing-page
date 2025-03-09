@@ -1,7 +1,5 @@
-// @ts-ignore
-import { appleImg, searchImg, bagImg } from "../utils"
-// @ts-ignore
-import { navLists } from "../constants"
+import { appleImg, searchImg, bagImg } from "../utils/index"
+import { navLists } from "../constants/index"
 import { Key } from "react"
 
 const Navbar = () => {
